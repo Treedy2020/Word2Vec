@@ -1,0 +1,16 @@
+model_name: SkipGram
+
+dataset: WikiText2
+data_dir: .data/
+train_batch_size: 96
+val_batch_size: 96
+shuffle: True
+
+optimizer: Adam
+learning_rate: 0.025
+epochs: 5
+train_steps: 10
+val_steps: 10
+
+checkpoint_frequency: 100
+model_dir: weights//cbow_WikiText2
