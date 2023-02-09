@@ -1,7 +1,7 @@
-model_name: SkipGram
+model_name: CBOW  # SkipGram or CBOW
 
-dataset: WikiText2
-data_dir: .data/
+dataset: WikiText2   # WikiText2 or WikiText103
+data_dir: .data/  # root dir of the training data
 train_batch_size: 96
 val_batch_size: 96
 shuffle: True
@@ -13,4 +13,4 @@ train_steps: 10
 val_steps: 10
 
 checkpoint_frequency: 100
-model_dir: weights//cbow_WikiText2
+model_dir: weights//cbow_WikiText2  # save path for vocab.pt and model.pt
